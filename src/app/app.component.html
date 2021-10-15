@@ -1,0 +1,38 @@
+
+<dx-gantt  taskListWidth="600"  scaleType="weeks" height="700">
+  <dxo-tasks [dataSource]="tasks"></dxo-tasks>
+  <dxo-dependencies [dataSource]="dependencies"></dxo-dependencies>
+  <dxo-resources [dataSource]="resources"></dxo-resources>
+  <dxo-resource-assignments [dataSource]="resourceAssignments"></dxo-resource-assignments>
+
+  <dxi-column dataField="title" caption="Index" [width]="50"></dxi-column>
+  
+  <dxi-column
+    dataField="Component"
+    caption=" Component"
+    dataType="string"
+    [width]="50"
+  ></dxi-column>
+  <dxi-column dataField="Deliverable" caption="Deliverable" dataType="string"[width]="50"></dxi-column>
+  <dxi-column dataField="progress" caption="sample" dataType="number" [width]="50"></dxi-column>
+  <dxi-column dataField="Level" caption="Level" dataType="number" [width]="50"></dxi-column>
+  <dxi-column dataField="LeadTimeWeeks" caption="Lead Time Weeks" dataType="string" [width]="50"></dxi-column>
+
+  <dxo-toolbar>
+    <dxi-item name="undo"></dxi-item>
+    <dxi-item name="redo"></dxi-item>
+    <dxi-item name="separator"></dxi-item>
+    <dxi-item name="collapseAll"></dxi-item>
+    <dxi-item name="expandAll"></dxi-item>
+    <dxi-item name="separator"></dxi-item>
+    <dxi-item name="addTask"></dxi-item>
+    <dxi-item name="deleteTask"></dxi-item>
+    <dxi-item name="separator"></dxi-item>
+    <dxi-item name="zoomIn"></dxi-item>
+    <dxi-item name="zoomOut"></dxi-item>
+  </dxo-toolbar>
+
+  <dxo-validation [autoUpdateParentTasks]="true"></dxo-validation>
+  <dxo-editing [enabled]="true"></dxo-editing>
+</dx-gantt>
+
