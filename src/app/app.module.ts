@@ -4,6 +4,7 @@ import { DevExtremeModule } from 'devextreme-angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DxGanttModule } from 'devextreme-angular';
+import { DxTreeListModule } from 'devextreme-angular';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { DxGanttModule } from 'devextreme-angular';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DxGanttModule
+    DxGanttModule,
+    DxTreeListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

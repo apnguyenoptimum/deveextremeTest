@@ -27,6 +27,7 @@
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": false,
     "strictTemplates": false,
-    "strictPropertyInitialization": false
+    "strictPropertyInitialization": false,
+    "resolveJsonModule": true
   }
 }
