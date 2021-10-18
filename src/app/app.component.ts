@@ -1,7 +1,7 @@
 import { NgModule, Component, enableProdMode } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import * as dummyData from './ExplodedExample.json';
+import * as dummyData from './ExplodedExample3.json';
 import { DxGanttModule } from 'devextreme-angular';
 
 import { AppService, Task, Employee, Priority } from './app.service';
@@ -23,11 +23,20 @@ export class AppComponent {
   priorities: Priority[];
   statuses: string[];
   jsonData: any[];
+//   @ViewChild(DxTreeListComponent, { static: false }) treeList: DxTreeListComponent;
+
+//   getSelectedRowKeys () {
+//     return this.treeList.instance.getSelectedRowKeys("all"); // or "excludeRecursive" | "leavesOnly"
+// }
+// getSelectedRowsData () {
+//     return this.treeList.instance.getSelectedRowsData();
+// }
   
 
   constructor(service: AppService) {
     this.jsonData = JSON.parse(JSON.stringify(dummyData))["default"];
-    this.jsonData.map((t) => console.log(t))
+    this.jsonData.map((t) => console.log(t.ComponentID))
+    // console.log(this.jsonData)
 
 
 

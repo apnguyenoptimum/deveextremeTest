@@ -31,6 +31,8 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/devextreme/dist/css/dx.common.css",
+              "node_modules/devextreme/dist/css/dx.light.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -100,7 +102,6 @@
             ],
             "styles": [
               "src/styles.scss",
-            
               "./dx.material.custom-scheme.less"
             ],
             "scripts": []
